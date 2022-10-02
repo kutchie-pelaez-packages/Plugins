@@ -124,4 +124,3 @@ func writeContentOfDirectory(
 
 try writeContentOfDirectory(with: rootEnumName, items: rootItems)
 fileManager.createFile(atPath: outputPath, contents: output.data(using: .utf8))
-print("🙂")
