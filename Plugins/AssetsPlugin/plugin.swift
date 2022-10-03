@@ -15,7 +15,7 @@ struct AssetsPlugin: BuildToolPlugin {
         let assetCatalogName = assetCatalogPath.lastComponent
         let generatedFileName = assetCatalogPath.stem + ".swift"
         let generatedFilePath = context.pluginWorkDirectory.appending(generatedFileName)
-        let executablePath = try context.tool(named: "AssetsTool").path
+        let executablePath = try context.tool(named: "AssetsPluginTool").path
 
         return .buildCommand(
             displayName: "Generating \(generatedFileName) for \(assetCatalogName)",
